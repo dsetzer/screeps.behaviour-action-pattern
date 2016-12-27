@@ -18,7 +18,7 @@ action.isAddableTarget = function(target) {
 action.newTarget = function(creep){
     var that = this;
     var isAddable = target => that.isAddableTarget(target, creep);
-    return creep.room.getBestConstrucionSiteFor(creep.pos, isAddable);
+    return creep.room.getBestConstructionSiteFor(creep.pos, isAddable);
 };
 action.work = function(creep){
     return creep.build(creep.target);

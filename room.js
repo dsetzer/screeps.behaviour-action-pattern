@@ -902,7 +902,7 @@ var mod = {
 
         };
 
-        Room.prototype.getBestConstrucionSiteFor = function(pos, filter = null) {
+        Room.prototype.getBestConstructionSiteFor = function(pos, filter = null) {
             let sites;
             if( filter ) sites = this.constructionSites.filter(filter);
             else sites = this.constructionSites;
